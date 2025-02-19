@@ -6,12 +6,12 @@ import { RootModel } from '../models/root.model';
 @Injectable({
   providedIn: 'root'
 })
-export class ApiclientService {
+export class ApidepartmentService {
 
   constructor(private http: HttpClient) { }
 
   getjson1(): Observable<RootModel> {
-    let url: string = "https://localhost:7208/api/HrStates";
+    let url: string = "https://localhost:7208/api/HrDepartments";
     return this.http.get<RootModel>(url);
   }
 

@@ -1,0 +1,13 @@
+.container{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(243, 239, 244);
+    border: 1px solid rgb(7, 5, 5);
+    font-size: small;
+    font-family: 'Times New Roman', Times, serif;
+    line-height:25px;
+}
+
+.container:hover{
+    background-color:hotpink;
+}

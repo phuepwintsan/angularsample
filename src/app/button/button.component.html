@@ -1,0 +1,50 @@
+<h1 class="flex justify-center"><b>Register</b></h1>
+<br />
+<div>
+  <div class="flex flex-wrap gap-4 mb-6">
+    <div class=>
+      <label for="integer" class="font-bold block mb-2"> First Name </label>
+      <input pInputText id="integer" pKeyFilter="int" class="w-full" />
+    </div>
+    <div class=>
+      <label for="number" class="font-bold block mb-2"> Last Name </label>
+      <input pInputText id="number" pKeyFilter="num" class="w-full" />
+    </div>
+    <div class=>
+      <label for="money" class="font-bold block mb-2"> Email </label>
+      <input pInputText id="money" pKeyFilter="money" class="w-full" />
+    </div>
+  </div>
+  <div class="flex flex-wrap gap-4">
+    <div class=>
+      <label for="hex" class="font-bold block mb-2"> Gender </label>
+      <input pInputText id="hex" pKeyFilter="hex" class="w-full" />
+    </div>
+    <div class=>
+      <label for="alphabetic" class="font-bold block mb-2"> Phone </label>
+      <input pInputText id="alphabetic" pKeyFilter="alpha" class="w-full" />
+    </div>
+    <div class=>
+      <label for="alphanumeric" class="font-bold block mb-2"> Address </label>
+      <input
+        pInputText
+        id="alphanumeric"
+        pKeyFilter="alphanum"
+        class="w-full"
+      />
+    </div>
+  </div>
+</div>
+<div class="card flex justify-center">
+  <p-rating [(ngModel)]="value" stars="5">
+    <ng-template #cancelicon>
+      <img src="favicon.ico" height="24" width="24" />
+    </ng-template>
+    <ng-template #onicon>
+      <img src="4.png" height="24" width="24" />
+    </ng-template>
+    <ng-template #officon>
+      <img src="favicon.ico" height="24" width="24" />
+    </ng-template>
+  </p-rating>
+</div>
